@@ -6,7 +6,7 @@ type AddTodoProps ={
     handleSubmit: (e: FormEvent)=>void
 }
 
-const AddTodo = ({task, handleChange, handleSubmit}:AddTodoProps) => {
+const AddTodo = ({task, handleChange, handleSubmit}:AddTodoProps): JSX.Element=> {
   return (
     <form className="flex justify-between w-full" onSubmit={handleSubmit}>
         <input

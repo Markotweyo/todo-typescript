@@ -11,7 +11,7 @@ type TodoProps ={
     handleCheckTodos:(id: string)=>void
 }
 
-const Row = ({todo:{task, isCompleted, id}, handleDeleteTodos, handleCheckTodos}: TodoProps) => {
+const Row = ({todo:{task, isCompleted, id}, handleDeleteTodos, handleCheckTodos}: TodoProps):JSX.Element => {
   return (
     <div className={`
         flex w-full p-4 mb-2 justify-between items-center

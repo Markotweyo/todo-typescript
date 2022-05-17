@@ -12,9 +12,9 @@ type Todo= {
 
 
 
-const ToDos = () => {
+const ToDos = (): JSX.Element => {
     const [todos, setTodos] = useState<Todo[]>(data);
-    const [task, setTask] = useState("")
+    const [task, setTask] = useState<string>("")
 
     const todosLength= todos.length;
     const hasTodos= todosLength>0;
